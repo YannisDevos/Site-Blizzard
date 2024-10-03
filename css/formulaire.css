@@ -1,0 +1,203 @@
+/* police d'écriture */
+
+@font-face {
+  font-family: Inria;
+  src: url('../polices/InriaSans-Regular.ttf');
+}
+
+
+html {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  margin: 0px;
+  background-image: url("../images/FondBlizzard.webp");
+  background-size: 100%;
+  background-color: #282D43;
+  font-family: "Inria";
+  font-size: 20px;
+  width: 100%;
+  color: white;
+}
+
+header {
+  z-index: 0;
+  position: absolute;
+  text-align: center;
+  margin: 0 auto 0 auto;
+  width: 100%;
+  height: 100px;
+}
+
+.titre:last-child {
+  color: #02a5f7;
+}
+
+header>h1 {
+  position: relative;
+  font-family: "Inria";
+}
+
+
+main {
+  background-color: #222222;
+  z-index: 0;
+  text-align: center;
+  position: relative;
+  top: 200px;
+  margin: 0 auto 0 auto;
+  width: 600px;
+  height: 450px;
+  border: solid 5px #1c71d8;
+  border-radius: 10px;
+}
+
+
+main>form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+main>form>div {
+  margin-top: 5%;
+  margin-bottom: 5%;
+  width: 250px;
+  height: 50px;
+}
+
+main>form>div:nth-child(5) {
+  margin-top: 8%;
+}
+
+main>form>div>p {
+  width: 200px;
+  position: relative;
+  top: 10px;
+  left: 20px;
+  text-align: center;
+}
+
+main>form>div>input {
+  width: 100%;
+  height: 50px;
+  box-shadow: 5px 5px #1c71d8;
+}
+
+
+.submit {
+  position: relative;
+  top: 110px;
+  border-style: none;
+  background-color: #57e389;
+  box-shadow: 5px 5px #26a269;
+}
+
+
+
+main>form>div>select {
+  width: 100%;
+  height: 50px;
+  box-shadow: 5px 5px #1c71d8;
+}
+
+nav {
+  z-index: 1;
+  position: fixed;
+  top: 0px;
+  margin: 0px;
+  left: 0px;
+  height: 100%;
+  width: 230px;
+  background-color: #282D43;
+}
+
+.logo {
+  width: 100%;
+  position: relative;
+  transition: 0.3s;
+  opacity: 100%;
+}
+
+.logo:hover {
+  transition: 0.3s;
+  opacity: 40%;
+}
+
+
+nav>ul>li {
+  list-style: none;
+  margin-bottom: 20px;
+}
+
+nav>ul>li>a {
+  transition: 0.4s;
+  color: white;
+  text-decoration: none;
+}
+
+
+nav>ul>li>a:hover {
+  transition: 0.4s;
+  color: #02a5f7;
+  margin-left: 5px;
+}
+
+.map {
+  width: 85%;
+  border-radius: 40px;
+  position: relative;
+  margin-left: 15px;
+  margin-top: 20px;
+}
+
+/* footer */
+
+footer {
+  background-color: #222222;
+  width: 100%;
+  height: 120px;
+  text-align: center;
+  position: absolute;
+  font-family: Inria;
+  top: 1500px;
+  bottom: 0px;
+  z-index: 2;
+}
+
+.footerTexte {
+  opacity: 50%;
+  position: relative;
+  margin: 25px auto 0 auto;
+}
+
+
+footer ul {
+  display: flex;
+  justify-content: space-around;
+}
+
+footer ul li {
+  list-style: none;
+  padding-right: 50px;
+}
+
+footer ul li a {
+  text-decoration: none;
+  color: white;
+}
+
+
+
+
+/* médias */
+
+@media screen and (max-width: 1000px) {
+  nav {
+    display: none;
+  }
+}
